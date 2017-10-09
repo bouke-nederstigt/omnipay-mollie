@@ -6,7 +6,6 @@
 
 namespace Omnipay\Mollie\Message;
 
-
 class RevokeCustomerMandateResponse extends AbstractResponse
 {
     public function isSuccessful()

@@ -48,6 +48,7 @@ class RevokeCustomerMandateRequestTest extends TestCase
 
     public function testSendSuccess()
     {
+        $this->setMockHttpResponse('RevokeCustomerMandate.txt');
         $response = $this->request->send();
 
         $this->assertInstanceOf('Omnipay\Mollie\Message\RevokeCustomerMandateResponse', $response);
