@@ -6,12 +6,11 @@
 
 namespace Omnipay\Mollie\Message;
 
-
 class FetchCustomerMandatesResponse extends AbstractResponse
 {
     public function getMandates()
     {
-        if(isset($this->data['data'])){
+        if (isset($this->data['data'])) {
             return $this->data['data'];
         }
     }

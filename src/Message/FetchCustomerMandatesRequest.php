@@ -6,7 +6,6 @@
 
 namespace Omnipay\Mollie\Message;
 
-
 use Omnipay\Common\Http\ResponseParser;
 
 class FetchCustomerMandatesRequest extends AbstractRequest
@@ -48,5 +47,4 @@ class FetchCustomerMandatesRequest extends AbstractRequest
 
         return $this->response = new FetchCustomerMandatesResponse($this, ResponseParser::json($httpResponse));
     }
-
 }
